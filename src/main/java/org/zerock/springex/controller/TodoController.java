@@ -6,11 +6,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.Mapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+import org.zerock.springex.dto.TodoDTO;
 
 import javax.validation.Valid;
+import javax.ws.rs.POST;
 
 
 @Controller
@@ -32,6 +35,13 @@ public class TodoController {
     @GetMapping("/register")
     public void register() {
         log.info("GET todo register.......");
+    }
+
+    @PostMapping("/register")
+    public void registerPOST(TodoDTO todoDTO) {
+        log.info("POST todo register.......");
+        log.info(todoDTO);
+
     }
 
 
