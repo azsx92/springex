@@ -34,12 +34,12 @@ public class SampleController {
         log.info("name: " + name);
         log.info("age: " + age);
     }
-//
-//    @GetMapping("/ex3")
-//    public void ex3(LocalDate dueDate){
-//        log.info("ex3........");
-//        log.info("dueDate: " + dueDate);
-//    }
+
+    @GetMapping("/ex3")
+    public void ex3(LocalDate dueDate){
+        log.info("ex3........");
+        log.info("dueDate: " + dueDate);
+    }
 //
 //    @GetMapping("/ex4")
 //    public void ex4(Model model){
