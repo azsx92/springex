@@ -2,6 +2,7 @@ package org.zerock.springex.mapper;
 
 import com.sun.tools.javac.comp.Todo;
 import org.zerock.springex.domain.TodoVO;
+import org.zerock.springex.dto.PageRequestDTO;
 
 import java.lang.management.LockInfo;
 import java.util.List;
@@ -20,5 +21,8 @@ public interface TodoMapper {
 
     void update(TodoVO todoVO);
 
+    List<TodoVO> selectList(PageRequestDTO pageRequestDTO);
+
+    int getCount(PageRequestDTO pageRequestDTO);
 
 }
