@@ -38,10 +38,16 @@ public class TodoController {
     }
 
     @PostMapping("/register")
-    public void registerPOST(TodoDTO todoDTO) {
+    public String registerPOST(@Valid TodoDTO todoDTO ,BindingResult bindingResult, RedirectAttributes redirectAttributes) {
         log.info("POST todo register.......");
+        if (bindingResult.hasErrors()) {
+            log.info("has errors......");
+            redirectAttributes.addFlashAttribute("errors", bindingResult.getAllErrors());
+            return "redirect:/todo/register";
+        }
         log.info(todoDTO);
 
+        return "redirect:/todo/list";
     }
 
 
