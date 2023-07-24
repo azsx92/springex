@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13b7614b-7c54-428d-a8da-a94435660683" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8035da37-ec52-43b1-b16f-e7e093c76457.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8035da37-ec52-43b1-b16f-e7e093c76457.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/springex/controller/TodoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/springex/controller/TodoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo/register.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -365,7 +365,7 @@
       <workItem from="1689681892219" duration="776000" />
       <workItem from="1689906496324" duration="46000" />
       <workItem from="1689906605939" duration="9697000" />
-      <workItem from="1690113825460" duration="6195000" />
+      <workItem from="1690113825460" duration="6830000" />
     </task>
     <servers />
   </component>

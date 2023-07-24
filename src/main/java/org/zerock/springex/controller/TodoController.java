@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.zerock.springex.dto.TodoDTO;
+import org.zerock.springex.service.TodoService;
 
 import javax.validation.Valid;
 import javax.ws.rs.POST;
@@ -22,7 +23,7 @@ import javax.ws.rs.POST;
 @RequiredArgsConstructor
 public class TodoController {
 
-//    private final TodoService todoService;
+    private final TodoService todoService;
 
     @RequestMapping("/list")
     public void list(){
@@ -42,10 +43,10 @@ public class TodoController {
         log.info("POST todo register.......");
         if (bindingResult.hasErrors()) {
             log.info("has errors......");
-            redirectAttributes.addFlashAttribute("errors", bindingResult.getAllErrors());
             return "redirect:/todo/register";
         }
         log.info(todoDTO);
+        todoService.register(todoDTO);
 
         return "redirect:/todo/list";
     }
